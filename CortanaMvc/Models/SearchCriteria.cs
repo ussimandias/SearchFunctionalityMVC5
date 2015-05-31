@@ -20,7 +20,6 @@ namespace CortanaMvc.Models
         [StringLength(15, ErrorMessage = "Claim Number Should be no more than 15 Characters")]
         public string ClaimNumber { get; set; }
 
-
         [Display(Name = "Certificate Number")]
         [StringLength(15, ErrorMessage = "Certificate Number Should be no more than 15 Characters")]
         public string CertificateNumber { get; set; }
