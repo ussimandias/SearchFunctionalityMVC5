@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using CortanaMvc.Models;
+using CortanaMvc.Models.MockDependencyInjection;
+
 
 
 namespace CortanaMvc.Controllers
@@ -25,16 +27,22 @@ namespace CortanaMvc.Controllers
         }
 
         // GET: ApplicationSearch
+        //public ActionResult Index()
+        //{
+        //    return View();
+         
+        //}
+
+        // GET: ApplicationSearch/Details/5
         public ActionResult Index()
         {
             return View();
-         
-        }
+            MockDependencyInjection.Claim claimNew = new MockDependencyInjection.Claim();
+            claimNew.Account = 12;
 
-        // GET: ApplicationSearch/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
+
+
+
         }
 
         // GET: ApplicationSearch/Create

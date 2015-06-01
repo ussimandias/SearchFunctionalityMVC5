@@ -188,7 +188,9 @@
       <DependentUpon>DataModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ISearchResultsService.cs" />
     <Compile Include="Models\MockDependencyInjection.cs" />
+    <Compile Include="Models\MockSearchResultsService.cs" />
     <Compile Include="Models\Person.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
